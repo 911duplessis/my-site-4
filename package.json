@@ -6,7 +6,7 @@
     "react": "16.14.0"
   },
   "scripts": {
-    "postinstall": "wix sync-types",
+    "postinstall": "wix sync-types || true",
     "dev": "wix dev",
     "lint": "eslint ."
   }
