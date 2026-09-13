@@ -3,8 +3,15 @@ import wixLocationFrontend from 'wix-location-frontend';
 
 $w.onReady(function () {
     const baseUrl = 'https://www.primeturf.co.za';
-    const path = wixLocationFrontend.path;
-    const currentUrl = wixLocationFrontend.url;
+    const path = Array.isArray(wixLocationFrontend.path) ? wixLocationFrontend.path.filter(Boolean) : [];
+    const currentUrl = wixLocationFrontend.url || baseUrl;
+
+    const formatPageName = function (value) {
+        return value
+            .replace(/artificial-grass-/i, '')
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+    };
 
     const localBusiness = {
         "@context": "https://schema.org",
@@ -43,28 +50,22 @@ $w.onReady(function () {
         ]
     };
 
-    if (path.length > 0 && path[0] !== "") {
-        const slug = path.join("/");
-        const pageName = slug
-            .replace(/artificial-grass-/i, "")
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+    if (path.length > 0) {
+        const slug = path.join('/');
+        const pageName = formatPageName(slug);
 
         breadcrumbs.itemListElement.push({
             "@type": "ListItem",
             "position": 2,
             "name": pageName,
-            "item": baseUrl + "/" + slug
+            "item": currentUrl || (baseUrl + '/' + slug)
         });
     }
 
     const schemas = [localBusiness, breadcrumbs];
 
-    if (path.length > 0 && path[0].startsWith("artificial-grass-")) {
-        const locationName = path[0]
-            .replace("artificial-grass-", "")
-            .replace(/-/g, " ")
-            .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+    if (path.length > 0 && path[0].startsWith('artificial-grass-')) {
+        const locationName = formatPageName(path[0].replace('artificial-grass-', ''));
 
         schemas.push({
             "@context": "https://schema.org",
