@@ -1,4 +1,5 @@
 {
+  "private": true,
   "devDependencies": {
     "@wix/cli": "^1.0.0",
     "@wix/eslint-plugin-cli": "^1.0.0",
