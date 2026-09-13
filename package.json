@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "wix dev",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "npm run lint"
   }
 }
