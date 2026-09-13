@@ -1,0 +1,526 @@
+
+{
+  "header": {
+    "reportVersion": 5,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "OOMError",
+    "filename": "report.20260913.114112.10616.0.001.json",
+    "dumpEventTime": "2026-09-13T11:41:12Z",
+    "dumpEventTimeStamp": "1789292472079",
+    "processId": 10616,
+    "threadId": null,
+    "cwd": "C:\\Users\\Admin\\documents\\my-site-4",
+    "commandLine": [
+      "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\@github\\copilot\\node_modules\\@github\\copilot-win32-x64\\copilot.exe",
+      "--no-warnings",
+      "--report-on-fatalerror",
+      "--optimize-for-size",
+      "--expose-gc",
+      "--no-maglev",
+      "--no-sparkplug",
+      "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\@github\\copilot\\node_modules\\@github\\copilot-win32-x64\\copilot.exe"
+    ],
+    "nodejsVersion": "v24.20.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "acorn": "8.18.0",
+      "ada": "4.0.0",
+      "amaro": "1.1.11",
+      "ares": "1.34.8",
+      "brotli": "1.2.0",
+      "cldr": "48.0",
+      "icu": "78.3",
+      "llhttp": "9.4.3",
+      "merve": "1.2.2",
+      "modules": "137",
+      "napi": "10",
+      "nbytes": "0.1.4",
+      "ncrypto": "0.0.1",
+      "nghttp2": "1.70.0",
+      "nghttp3": "",
+      "ngtcp2": "",
+      "node": "24.20.0",
+      "openssl": "3.5.7",
+      "simdjson": "4.6.6",
+      "simdutf": "6.4.0",
+      "sqlite": "3.53.4",
+      "tz": "2026c",
+      "undici": "7.29.0",
+      "unicode": "17.0",
+      "uv": "1.52.1",
+      "uvwasi": "0.0.23",
+      "v8": "13.6.233.17-node.53",
+      "zlib": "1.3.2.1-motley-42c2f19",
+      "zstd": "1.5.7"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Krypton",
+      "headersUrl": "https://nodejs.org/download/release/v24.20.0/node-v24.20.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v24.20.0/node-v24.20.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v24.20.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.22621",
+    "osVersion": "Windows 11 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 644484,
+        "nice": 0,
+        "sys": 493312,
+        "idle": 9721828,
+        "irq": 99328
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 343,
+        "idle": 10859281,
+        "irq": 15
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 265,
+        "idle": 10859359,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 187,
+        "idle": 10859437,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 500,
+        "idle": 10859125,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 156,
+        "idle": 10859468,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 187,
+        "idle": 10859437,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 796,
+        "idle": 10858828,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 187,
+        "idle": 10859437,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 171,
+        "idle": 10859390,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 203,
+        "idle": 10859359,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) CPU           W3680  @ 3.33GHz",
+        "speed": 3333,
+        "user": 0,
+        "nice": 0,
+        "sys": 390,
+        "idle": 10859171,
+        "irq": 0
+      }
+    ],
+    "host": "DESKTOP-IKTG946"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ],
+    "errorProperties": {
+    }
+  },
+  "javascriptHeap": {
+    "totalMemory": 79060992,
+    "executableMemory": 3248128,
+    "totalCommittedMemory": 79060992,
+    "availableMemory": 4231325328,
+    "totalGlobalHandlesMemory": 176200,
+    "usedGlobalHandlesMemory": 106208,
+    "usedMemory": 67418208,
+    "memoryLimit": 4298113024,
+    "mallocedMemory": 1073200,
+    "externalMemory": 29029752,
+    "peakMallocedMemory": 13598664,
+    "nativeContextCount": 2,
+    "detachedContextCount": 0,
+    "doesZapGarbage": 0,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1048512,
+        "used": 1048512,
+        "available": 0
+      },
+      "old_space": {
+        "memorySize": 69103616,
+        "committedMemory": 69103616,
+        "capacity": 68904864,
+        "used": 58708608,
+        "available": 10196256
+      },
+      "code_space": {
+        "memorySize": 2621440,
+        "committedMemory": 2621440,
+        "capacity": 2621120,
+        "used": 2328192,
+        "available": 292928
+      },
+      "shared_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "trusted_space": {
+        "memorySize": 4055040,
+        "committedMemory": 4055040,
+        "capacity": 4042944,
+        "used": 3307408,
+        "available": 735536
+      },
+      "shared_trusted_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1048576,
+        "used": 0,
+        "available": 1048576
+      },
+      "large_object_space": {
+        "memorySize": 1212416,
+        "committedMemory": 1212416,
+        "capacity": 1198192,
+        "used": 1198192,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 626688,
+        "committedMemory": 626688,
+        "capacity": 623744,
+        "used": 623744,
+        "available": 0
+      },
+      "shared_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "shared_trusted_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "trusted_large_object_space": {
+        "memorySize": 393216,
+        "committedMemory": 393216,
+        "capacity": 203552,
+        "used": 203552,
+        "available": 0
+      }
+    }
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff73fff9fb7",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73fff645c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73fffc328",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7400d1d57",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73ece3617",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eae3e57",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73ea7c44b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73ea53e7e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eae68f2",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eae58a7",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eaf67e2",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eaf630b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7403f492d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eae1920",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eafc17a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73eb08616",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff73e6d9277",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000001392fe775fa",
+      "symbol": ""
+    }
+  ],
+  "resourceUsage": {
+    "free_memory": 2739994624,
+    "total_memory": 21457281024,
+    "rss": 486014976,
+    "available_memory": 2739994624,
+    "userCpuSeconds": 60.562,
+    "kernelCpuSeconds": 1.5,
+    "cpuConsumptionPercent": 3.50435,
+    "userCpuConsumptionPercent": 3.41965,
+    "kernelCpuConsumptionPercent": 0.0846979,
+    "maxRss": 547217408,
+    "pageFaults": {
+      "IORequired": 1953596,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 15627,
+      "writes": 802
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 4.265,
+    "kernelCpuSeconds": 0.125,
+    "cpuConsumptionPercent": 0.247883,
+    "userCpuConsumptionPercent": 0.240824,
+    "kernelCpuConsumptionPercent": 0.00705816,
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Admin\\AppData\\Roaming",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "134294373591252813",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-IKTG946",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "COPILOT_CLI_BINARY_VERSION": "1.0.83",
+    "COPILOT_CLI_RESOLVED_DIST_DIR": "C:\\Users\\Admin\\AppData\\Local\\copilot\\pkg\\win32-x64\\1.0.84-5",
+    "COPILOT_LOADER_PID": "10616",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Admin",
+    "LOCALAPPDATA": "C:\\Users\\Admin\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-IKTG946",
+    "NoDefaultCurrentDirectoryInExePath": "1",
+    "NODE_ENV": "production",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OS": "Windows_NT",
+    "Path": "C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Admin\\AppData\\Local\\cursor-agent",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL",
+    "POWERSHELL_DISTRIBUTION_CHANNEL": "MSI:Windows 10 Pro",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 44 Stepping 2, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "2c02",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Users\\Admin\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\Admin\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Admin\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-IKTG946",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-IKTG946",
+    "USERNAME": "Admin",
+    "USERPROFILE": "C:\\Users\\Admin",
+    "windir": "C:\\Windows"
+  },
+  "sharedObjects": [
+    "C:\\Users\\Admin\\AppData\\Roaming\\npm\\node_modules\\@github\\copilot\\node_modules\\@github\\copilot-win32-x64\\copilot.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\SHELL32.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\System32\\ole32.dll",
+    "C:\\Windows\\System32\\OLEAUT32.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\dbgcore.DLL",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\SYSTEM32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\UMPDC.dll",
+    "C:\\Windows\\System32\\bcryptprimitives.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTSP.dll",
+    "C:\\Windows\\system32\\rsaenh.dll",
+    "C:\\Windows\\SYSTEM32\\kernel.appcore.dll",
+    "\\\\?\\C:\\Users\\Admin\\AppData\\Local\\copilot\\pkg\\win32-x64\\1.0.84-5\\prebuilds\\win32-x64\\cli-native.node",
+    "C:\\Windows\\SYSTEM32\\VCRUNTIME140.dll",
+    "\\\\?\\C:\\Users\\Admin\\AppData\\Local\\copilot\\pkg\\win32-x64\\1.0.84-5\\prebuilds\\win32-x64\\runtime.node",
+    "C:\\Windows\\System32\\psapi.dll",
+    "C:\\Windows\\System32\\wintrust.dll",
+    "C:\\Windows\\SYSTEM32\\ncrypt.dll",
+    "C:\\Windows\\SYSTEM32\\tdh.dll",
+    "C:\\Windows\\SYSTEM32\\secur32.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\SSPICLI.DLL",
+    "C:\\Windows\\SYSTEM32\\NTASN1.dll",
+    "C:\\Windows\\System32\\MSASN1.dll",
+    "\\\\?\\C:\\Users\\Admin\\AppData\\Local\\copilot\\pkg\\win32-x64\\1.0.84-5\\prebuilds\\win32-x64\\msal-node-runtime.node",
+    "\\\\?\\C:\\Users\\Admin\\AppData\\Local\\copilot\\pkg\\win32-x64\\1.0.84-5\\prebuilds\\win32-x64\\msalruntime.dll",
+    "C:\\Windows\\SYSTEM32\\WININET.dll",
+    "C:\\Windows\\SYSTEM32\\windows.storage.dll",
+    "C:\\Windows\\SYSTEM32\\wintypes.dll",
+    "C:\\Windows\\System32\\SHCORE.dll",
+    "C:\\Windows\\System32\\shlwapi.dll",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "C:\\Windows\\SYSTEM32\\gpapi.dll",
+    "C:\\Windows\\System32\\cryptnet.dll",
+    "C:\\Windows\\SYSTEM32\\profapi.dll",
+    "C:\\Windows\\SYSTEM32\\WINNSI.DLL",
+    "C:\\Windows\\SYSTEM32\\CldApi.dll",
+    "C:\\Windows\\system32\\apphelp.dll",
+    "C:\\Windows\\SYSTEM32\\ntmarta.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\System32\\winrnr.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\nlansp_c.dll"
+  ]
+}
